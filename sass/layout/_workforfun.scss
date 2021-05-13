@@ -1,0 +1,77 @@
+.workforfun {
+  background-image: url("/img/pattern-2.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  padding: $pd-6;
+  .nav-tabs {
+    border: none;
+    .nav-item {
+      background-color: $bg-cl-2;
+      margin-right: $mg-5;
+      margin-bottom: 0px;
+      margin-top: $mg-5;
+      .nav-link {
+        padding: $pd-13 $pd-14;
+        border: none;
+        background-color: transparent;
+        position: relative;
+        &::after {
+          position: absolute;
+          bottom: -10px;
+          left: 50%;
+          width: 0;
+          height: 0;
+          margin-left: -10px;
+          content: "";
+          transition: all 0.3s ease;
+          opacity: 0;
+          border-width: 10px 10px 0 10px;
+          border-style: solid;
+          border-color: #fff transparent transparent transparent;
+        }
+        i {
+          font-size: $fs-tiltle-2;
+          line-height: 1;
+          color: $cl-txt-2;
+        }
+      }
+      .nav-link.active {
+        background-color: $bg-cl-default;
+        &::after {
+          opacity: 1;
+        }
+      }
+      &:hover {
+        .nav-link {
+          background-color: $bg-cl-default;
+          &::after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  .tab-content {
+    span {
+      text-transform: uppercase;
+      color: $cl-6;
+      font-size: $fs-txt-2;
+      letter-spacing: 2px;
+      line-height: 30px;
+      font-weight: $fw-1;
+    }
+    h2 {
+      font-size: $fs-tiltle-3;
+      color: $cl-tiltle;
+      line-height: 1.5;
+      font-weight: $fw-1;
+      margin-bottom: $mg-6;
+    }
+    p {
+      font-size: $fs-txt-default;
+      color: $cl-7;
+      font-weight: $fw-1;
+      line-height: 30px;
+    }
+  }
+}

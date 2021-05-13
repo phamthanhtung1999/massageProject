@@ -1,0 +1,86 @@
+header {
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+}
+.shrink {
+  padding: 20px 0;
+}
+.header {
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  background-color: #323232;
+  //
+
+  .navbar {
+    .logo {
+      width: 62px;
+      height: 60px;
+    }
+    .navbar-toggler {
+      border: none;
+    }
+  }
+  &__right {
+    .navbar-nav {
+      .nav-item {
+        padding: $pd-2;
+        &:hover .nav-link {
+          @include styleText($cl-txt-3, $fs-default, $fw-1);
+        }
+
+        .nav-link {
+          font-size: $fs-default;
+          text-transform: uppercase;
+          font-weight: $fw-1;
+          @include styleText($cl-txt-default, $fs-default, $fw-1);
+          text-decoration: none;
+          padding: 0px 0px;
+        }
+        i {
+          margin-right: 5px;
+        }
+      }
+      .nav-item.active {
+        .nav-link {
+          @include styleText($cl-txt-3, $fs-default, $fw-1);
+        }
+      }
+    }
+    @include reponsiveMax("medium") {
+      .navbar-nav {
+        .nav-item {
+          width: 100%;
+          background-color: $bg-cl-default;
+          padding: $pd-8;
+          padding-left: $pd-10;
+          border-bottom: 1px solid black;
+          a {
+            color: $cl-txt-1 !important;
+          }
+          &:hover {
+            a {
+              color: $cl-txt-3 !important;
+            }
+          }
+        }
+        .nav-item.active {
+          a {
+            color: $bg-cl-1 !important;
+          }
+        }
+        .hiden {
+          display: none;
+        }
+      }
+    }
+  }
+}
+#header {
+  font-size: 90px !important; /* Big font size */
+  font-weight: bold;
+  position: fixed; /* Fixed position - sit on top of the page */
+  top: 0;
+  transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+}

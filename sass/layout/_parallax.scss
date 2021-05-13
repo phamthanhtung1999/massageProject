@@ -1,0 +1,33 @@
+.parallax {
+  @include backGround("/img/8.jpg", 500px);
+  background-attachment: fixed;
+  padding: $pd-5 0;
+  text-align: center;
+  p {
+    letter-spacing: 3px;
+    font-size: $fs-txt-4;
+    color: $cl-txt-3;
+    text-transform: uppercase;
+  }
+  h1 {
+    letter-spacing: 2px;
+    font-weight: $fw-1;
+    text-transform: uppercase;
+    color: $cl-txt-default;
+  }
+  button {
+    padding: 15px 30px;
+    background-color: $bg-cl-1;
+    color: $cl-txt-default;
+    border: 1px solid $bg-cl-1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+    margin-top: $mg-6;
+    &:hover {
+      background-color: $bg-cl-default;
+      color: $cl-txt-1;
+      border: 1px solid $bg-cl-default;
+    }
+  }
+}

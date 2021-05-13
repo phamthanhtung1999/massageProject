@@ -1,0 +1,10 @@
+html,
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: $fs-default;
+  font-weight: $fw-3;
+  ::-webkit-scrollbar {
+    width: 0px !important;
+    height: 0px;
+  }
+}

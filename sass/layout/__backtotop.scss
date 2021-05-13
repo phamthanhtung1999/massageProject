@@ -1,0 +1,25 @@
+.backtotop {
+  visibility: hidden;
+
+  i {
+    font-size: 14px;
+    padding: $pd-15;
+    position: fixed;
+    right: 40px;
+    bottom: 20px;
+    z-index: 10;
+    color: $cl-txt-2;
+    background-color: $bg-cl-5;
+    &:hover {
+      background-color: $cl-txt-3;
+      color: $cl-7;
+    }
+  }
+}
+.cd-top--is-visible {
+  visibility: visible;
+  /* opacity: 1;   */
+}
+.cd-top--fade-out {
+  opacity: 1;
+}

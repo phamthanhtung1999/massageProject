@@ -1,0 +1,48 @@
+.banner {
+  @include backGround("/img/creative-banner.jpg", $h-carousel);
+  position: relative;
+  &__item {
+    @include styleAbsolute(50%, 50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    h1 {
+      @include styleText($cl-txt-default, $fs-tiltle, $fw-3);
+      letter-spacing: $lter-spacing-1;
+    }
+    h3 {
+      @include styleText($cl-txt-default, $fs-tiltle-0, $fw-1);
+      letter-spacing: $lter-spacing-2;
+    }
+  }
+  @include reponsiveMax("large") {
+    .banner__item {
+      h1 {
+        font-size: $fs-tiltle-4;
+      }
+      h3 {
+        font-size: $fs-txt-3;
+      }
+    }
+  }
+  @include reponsiveMax("medium") {
+    .banner__item {
+      h1 {
+        font-size: $fs-tiltle-3;
+      }
+      h3 {
+        font-size: $fs-txt-4;
+      }
+    }
+  }
+  @include reponsiveMax("small") {
+    .banner__item {
+      h1 {
+        font-size: $fs-tiltle-0;
+      }
+      h3 {
+        font-size: $fs-txt-1;
+      }
+    }
+  }
+}

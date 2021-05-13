@@ -1,0 +1,19 @@
+.trademark2 {
+  .owl-carousel {
+    .owl-dots {
+      display: block !important;
+      text-align: center;
+      margin-top: $mg-6;
+      .owl-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 0px 8px;
+        background-color: $cl-9;
+      }
+      .owl-dot.active {
+        background-color: $cl-10;
+      }
+    }
+  }
+}

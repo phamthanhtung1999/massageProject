@@ -1,0 +1,16 @@
+%afterTitle {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 60px;
+  @include styleAbsoluteTitle(-2px, $index);
+  background-color: $cl-after;
+}
+%affterhorizontal {
+  content: "";
+  display: block;
+  height: 15px;
+  width: 1px;
+  @include styleAbsolutebr(3px, -8px);
+  background-color: #909090;
+}

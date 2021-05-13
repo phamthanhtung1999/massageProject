@@ -1,0 +1,144 @@
+.fabulousteam {
+  text-align: center;
+  &__title {
+    padding: $pd-11 0px;
+    h3 {
+      font-size: $fs-tiltle-1;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      line-height: 1.5;
+      font-weight: $fw-1;
+      color: $cl-tiltle;
+      position: relative;
+      margin-bottom: $mg-5;
+      &::after {
+        @extend %afterTitle;
+      }
+    }
+    p {
+      width: 60%;
+      margin: 0px auto;
+    }
+  }
+  &__list {
+    .list__item {
+      padding: 0px $pd-3;
+
+      position: relative;
+      img {
+        width: 100%;
+      }
+
+      .infor__item {
+        @include styleAbsolutebr(10%, 30px);
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 60%;
+        padding-top: $pd-10;
+        text-align: right;
+        padding-right: 5%;
+        h5 {
+          color: $bg-cl-default;
+          font-size: $fs-txt-2;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+        span {
+          color: rgba(255, 255, 255, 0.5);
+          text-transform: uppercase;
+          font-size: $fs-txt-5;
+        }
+      }
+      .overlay__item {
+        @include styleAbsolute(0px, 0px);
+        margin: 0px $pd-3;
+        height: 100%;
+        border: 20px solid rgba(0, 0, 0, 0.1);
+        background-color: rgba(255, 255, 255, 0.9);
+        opacity: 0;
+        transition: all 0.5s;
+        .overlay__itemheader {
+          height: 50%;
+          h4 {
+            font-size: $fs-txt-2;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: $cl-txt-1;
+            font-weight: normal;
+            line-height: 1.5;
+            margin-bottom: $mg-5;
+          }
+          p {
+            color: $cl-txt-2;
+            font-size: $fs-txt-2;
+            font-weight: $fw-1;
+            line-height: 30px;
+          }
+        }
+        .overlay__itemfooter {
+          height: 50%;
+          position: relative;
+          .item__contact {
+            @include styleAbsoluteTitle(0, 0);
+            width: 100%;
+            text-align: center;
+
+            i {
+              margin: 0px $pd-10;
+              transition: all 1s;
+              &:hover {
+                color: $cl-txt-3;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+      &:hover {
+        .overlay__item {
+          opacity: 1;
+          .overlay__itemheader {
+            h4 {
+              margin-top: $pd-11;
+            }
+          }
+          .overlay__itemfooter {
+            .item__contact {
+              @include styleAbsoluteTitle(60%, 0);
+            }
+          }
+        }
+      }
+    }
+  }
+  &__joinclub {
+    background-color: #f5f5f5;
+
+    h3 {
+      font-size: $fs-txt-3;
+      font-weight: $fw-1;
+      line-height: 1.5;
+      color: $cl-tiltle;
+      span {
+        color: $cl-txt-3;
+      }
+    }
+    p {
+      font-size: $fs-txt-default;
+      font-weight: $fw-2;
+      line-height: 1.5;
+      color: $cl-txt-2;
+    }
+    button {
+      padding: 15px 30px;
+      text-transform: uppercase;
+      background-color: $bg-cl-3;
+      border: 1px solid $bg-cl-3;
+      color: $cl-txt-default;
+      transition: all 0.5s;
+      &:hover {
+        background-color: $cl-txt-3;
+        border: 1px solid $cl-txt-3;
+      }
+    }
+  }
+}

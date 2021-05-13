@@ -1,0 +1,10 @@
+.lightbox {
+  .lb-dataContainer {
+    .lb-data {
+      .lb-close {
+        @include backGround("/img/exit.png", 15px);
+        width: 15px;
+      }
+    }
+  }
+}
