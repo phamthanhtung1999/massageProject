@@ -1,5 +1,22 @@
 .trademark2 {
   .owl-carousel {
+    .owl-stage-outer {
+      .owl-stage {
+        .owl-item {
+          .img-fluid {
+            width: 150px;
+            height: 120px;
+          }
+        }
+      }
+    }
+  }
+  .owl-carousel {
+    .owl-nav {
+      display: none;
+    }
+  }
+  .owl-carousel {
     .owl-dots {
       display: block !important;
       text-align: center;

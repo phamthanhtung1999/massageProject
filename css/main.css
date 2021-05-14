@@ -966,6 +966,7 @@ header {
   margin-right: 20px;
   margin-bottom: 0px;
   margin-top: 20px;
+  width: 190px;
 }
 
 .workforfun .nav-tabs .nav-item .nav-link {
@@ -1136,6 +1137,15 @@ header {
   text-transform: uppercase;
   font-weight: 400;
   line-height: 1.5;
+}
+
+.trademark2 .owl-carousel .owl-stage-outer .owl-stage .owl-item .img-fluid {
+  width: 150px;
+  height: 120px;
+}
+
+.trademark2 .owl-carousel .owl-nav {
+  display: none;
 }
 
 .trademark2 .owl-carousel .owl-dots {
